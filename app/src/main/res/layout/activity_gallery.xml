@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mgi.ivan_sison.camera.GalleryActivity"
+    android:orientation="vertical"
+    android:background="#444444">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/gallery_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageButton
+                android:id="@+id/gallery_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/camera_back" />
+
+            <TextView
+                android:id="@+id/gallery_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="17sp"
+                android:textColor="#FFFF"
+                tools:text="Gallery"/>
+
+            <ImageButton
+                android:id="@+id/gallery_album_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrow"
+                android:layout_toRightOf="@+id/gallery_album"
+                />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gallery_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gallery_header_layout"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:numColumns="3"
+            android:columnWidth="150dp"
+            >
+
+        </GridView>
+
+    </RelativeLayout>
+</LinearLayout>

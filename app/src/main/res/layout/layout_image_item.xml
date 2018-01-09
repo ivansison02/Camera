@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_item"
+        tools:src="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/image_hint"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/camera_capture"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
